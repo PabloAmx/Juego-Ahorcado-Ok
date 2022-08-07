@@ -1,0 +1,231 @@
+body{
+    font-family: 'Roboto', cursive;
+    font-weight: bolder;
+}
+
+header{
+    background-color: #bfd3f1;
+    padding: 5px 0;
+}
+
+.caja{
+    position: relative;
+    width: 940px;
+    font-size: 40px;
+    margin: 0 auto;
+    color: #102079;
+}
+
+.caja img{
+    width: 40px;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.caja p{
+    position: relative;
+    text-align: center;
+    bottom: 50px;
+    font-weight: bolder;
+}
+
+body{
+    background-color: #bfd3f1;
+    background-repeat: repeat;
+}
+
+.botones{
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.botones ul{
+    position: relative;
+    text-align: center;
+    margin: 5em;
+}
+
+li{
+    padding: 1em;
+}
+
+.botones button{
+    height: 3em;
+    width: 10em;
+    font-size: large;
+    background: #10215a;
+    color: #fdfdfd;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: 1s all;
+    font-family: inherit;
+}
+
+.botones button:hover{
+    background: #10215a;
+    transform: scale(1.2);
+}
+
+.invisible{
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.crear-palabra{
+    text-align: center;
+    position: relative;
+}
+
+#resultado{
+    color: #a72707;
+}
+
+.crear-palabra button{
+    height: 3em;
+    width: 10em;
+    font-size: large;
+    background: #10215a;
+    color: #fdfdfd;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: 1s all;
+    font-family: inherit;
+    position: relative;
+}
+
+.crear-palabra button:hover{
+    background: #10215a;
+    transform: scale(1.2);
+}
+
+#creando-palabra{
+    background-color: #fdfdfd;
+    opacity: 0.5;
+    color: #10215a;
+    border-radius: 10px;
+    resize: none;
+    width: 60%;
+    position: relative;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin: 2em 20%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.juego{
+    position: relative;
+    text-align: center;
+
+}
+
+#resultado{
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.palabra_adivinar{
+    font-size: 50px;
+    color: rgb(54, 12, 122);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.juego canvas{
+    margin: 1em;
+    vertical-align: top;
+
+}
+
+
+.juego li{
+    display: inline-block;
+}
+
+.tablero-usadas{
+    position: relative;
+    left: 400px;
+    width: 40%;
+    margin: auto;
+    bottom: 550px;
+}
+
+#titulo-usadas{
+    font-size: 30px;
+    color: rgb(31, 36, 100);
+}
+
+#letras-usadas{
+    font-size: 30px;
+    color: rgb(133, 46, 19);
+    margin-top: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.botonera-juego{
+    position:absolute;
+    right: 450px;
+    bottom: 5px;
+}
+
+.juego button{
+    height: 3em;
+    width: 10em;
+    font-size: large;
+    background: #10215a;
+    color: #fdfdfd;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: 1s all;
+    font-family: inherit;
+}
+
+.juego button:hover{
+    background: #10215a;
+    transform: scale(1.2);
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 3em 0;
+}
+
+footer img{
+    width: 10%;
+}
+
+footer p{
+    position: relative;
+    font-size: 20px;
+    color: rgb(12, 80, 145);
+}
+
+@media screen and (max-width:460px){
+
+    .caja{
+        width: auto;
+    }
+
+    .juego canvas{
+        margin: 0;
+        width: 100%;
+    }
+    .palabra_adivinar{
+        font-size: 40px;
+    }
+
+    .tablero-usadas{
+        position: unset;
+        width: auto;
+    }
+
+    .botonera-juego{
+        right: 0;
+        bottom: 0;
+    }
+}

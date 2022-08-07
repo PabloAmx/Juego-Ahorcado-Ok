@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Juego del Ahorcado</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <header>
+            <div class="caja">
+                <h1><img src="img/logo_alura_azul.png"></h1>
+                <p>Juego del ahorcado</p>
+            </div>
+        </header>
+
+        <main id="main">
+            <section class="botones">
+                <ul>
+                    <li><button id="jugar">Iniciar Juego</button></li>
+                    <li><button id="palabra">Crea tu palabra!</button></li>
+                </ul>
+            </section>
+            <section class="crear-palabra">
+                <textarea name="palabra" id="creando-palabra" style="resize: none;" cols="30" rows="10" placeholder="Escribí acá tu palabra de 8 letras" required></textarea>
+                <button id="volver-palabra">Atrás</button>
+                <button id="crear-jugar">Jugar</button>
+                </section>
+            <section class="juego">
+                <p id="resultado">.</p>
+                <canvas width="600" height="400"></canvas>
+                <ul class="palabra_adivinar">
+                    <li id="palabraInner">.</li>
+                </ul>
+                <div class="tablero-usadas">
+                    <p id="titulo-usadas">Utilizaste estas letras</p>
+                    <p id="letras-usadas">.</p>
+                </div>
+                <ul class="botonera-juego">
+                    <li><button id="volver-juego">Atrás</button></li>
+                    <li><button id="nva-palabra">Otra Palabra</button></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Pablo Amadio</p>
+
+        </footer>
+        <script src="js/cambio_pantallas.js"></script>
+        <script src="js/horca_y_ahorcado.js"></script>
+        <script src="js/juego.js"></script>
+        <script src="js/nueva_palabra.js"></script>
+    </body>
+</html>
